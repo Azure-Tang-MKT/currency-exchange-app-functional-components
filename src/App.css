@@ -1,44 +1,56 @@
 body {
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
 }
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 .mainApp {
   text-align: left;
 }
+.text-date {
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+.convertorPart {
+  margin-top: 15px;
+}
+.text {
+  margin-bottom: -3px;
+  font-weight: 600;
+}
 
-.title {
-  font-size: 22px;
-  margin-bottom: 10px;
+.ant-input-number {
+  width: 100%;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-input-number {
+  border: 0ch;
 }
 
 .convertorPart {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
 }
 
-.text,
-.foreignPortion,
-.cadPortion {
-  display: flex;
-  gap: 60px;
-  margin-bottom: 5px;
-}
-
-.currencies {
-  margin-left: -30px;
-}
-
-.inputAmount,
-.cadAmount,
-.currencyOptions,
-.CAD {
-  border: 1px solid #333;
+.ant-picker,
+.ant-select,
+.ant-input-number {
+  border: 1.2px solid #333;
   border-radius: 0.3em;
   /* padding: 0.25rem; */
-  width: 150px;
+  width: 200px;
+}
+
+.setence {
+  margin-top: 20px;
 }
