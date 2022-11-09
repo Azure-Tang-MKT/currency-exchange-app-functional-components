@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes, Link } from "react-router-dom";
 import { Select, message, InputNumber, DatePicker, Spin } from "antd";
 import moment from "moment";
 import "antd/dist/antd.css";
 import "./ExchangeCurrency.css";
-import Home from "./Home";
-import About from "./About";
-import ExchangeCurrencyLayout from "./ExchangeCurrencyLayout";
 
 const { Option } = Select; //
 
