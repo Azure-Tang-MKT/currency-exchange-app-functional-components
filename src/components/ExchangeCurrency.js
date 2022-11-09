@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
 import { Select, message, InputNumber, DatePicker, Spin } from "antd";
 import moment from "moment";
 import "antd/dist/antd.css";
-import "./App.css";
+import "./ExchangeCurrency.css";
+import Home from "./Home";
+import About from "./About";
+import ExchangeCurrencyLayout from "./ExchangeCurrencyLayout";
 
 const { Option } = Select; //
 
@@ -13,8 +17,8 @@ const ExchangeCurrency = () => {
   const [date, setdate] = useState(moment().format("YYYY-MM-DD"));
   const [amount, setamount] = useState("");
   // const [CADAmount, setCADAmount] = useState("");
-  const [changeforeignAmount, setchangeforeignAmount] = useState("true");
-  const [isLoading, setisLoading] = useState("true");
+  const [changeforeignAmount, setchangeforeignAmount] = useState(true);
+  const [isLoading, setisLoading] = useState(true);
 
   const handleDateChange = (date) => {
     setdate(moment(date).format("YYYY-MM-DD"));
@@ -69,9 +73,9 @@ const ExchangeCurrency = () => {
   }, [SelectedCurrency, date]);
 
   return (
-    <div>
-      <div className="title">Currency Convertor</div>
-      <div className="text-date">Date</div>
+    <div className="convertorPage">
+      <div className="CurrencyConvertor">Currency Convertor</div>
+      <div className="textDate">Date</div>
 
       <DatePicker onChange={(date) => handleDateChange(date)} />
       {isLoading && <Spin />}

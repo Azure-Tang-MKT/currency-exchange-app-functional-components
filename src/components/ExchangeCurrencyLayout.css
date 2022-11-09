@@ -1,0 +1,24 @@
+.menuBar {
+  background-color: #1890ff;
+  height: 80px;
+  color: white !important;
+}
+
+ul {
+  display: flex;
+  gap: 60px;
+  list-style-type: none;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+ul a {
+  color: white;
+}
+ul a:hover {
+  background-color: #5babf6;
+  padding: 8px;
+  border-radius: 3px;
+  color: white;
+}
