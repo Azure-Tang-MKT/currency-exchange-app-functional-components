@@ -31,15 +31,16 @@
   background-color: transparent;
   margin-top: 20px;
   border: 1px white solid;
-  color: white !important;
+  color: white;
   padding: 2px 4px;
+  border-radius: 3px;
 }
 
 .start-btn:hover {
   background-color: rgb(139, 200, 239);
 }
 
-a {
-  color: white !important;
+.start-btn a {
+  color: white;
   text-decoration: none;
 }

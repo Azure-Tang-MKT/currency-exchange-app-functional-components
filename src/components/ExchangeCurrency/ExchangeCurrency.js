@@ -42,26 +42,25 @@ const ExchangeCurrency = () => {
     setamount(e);
     setchangeforeignAmount(false);
   };
-
+  //作业comment:47-64; 创建文件：针对页面btn和文字写unit test
   const fetchData = async () => {
-    setisLoading(true);
-    try {
-      const res = await fetch(
-        `https://www.bankofcanada.ca/valet/observations/FXCAD${SelectedCurrency}/json?start_date=${date}&end_date=${date}`
-      );
-      const data = await res.json();
-      console.log(data);
-
-      if (data.observations.length !== 0) {
-        setexchangeRate(data.observations[0][`FXCAD${SelectedCurrency}`].v);
-      } else {
-        message.info("There is no exchange rate on this date!!");
-        setexchangeRate("");
-      }
-      setisLoading(false);
-    } catch (error) {
-      console.log(error);
-    }
+    // setisLoading(true);
+    // try {
+    //   const res = await fetch(
+    //     `https://www.bankofcanada.ca/valet/observations/FXCAD${SelectedCurrency}/json?start_date=${date}&end_date=${date}`
+    //   );
+    //   const data = await res.json();
+    //   console.log(data);
+    //   if (data.observations.length !== 0) {
+    //     setexchangeRate(data.observations[0][`FXCAD${SelectedCurrency}`].v);
+    //   } else {
+    //     message.info("There is no exchange rate on this date!!");
+    //     setexchangeRate("");
+    //   }
+    //   setisLoading(false);
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   useEffect(() => {

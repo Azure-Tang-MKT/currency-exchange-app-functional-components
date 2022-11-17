@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Page renders the GoBack page with page info and go back button 1`] = `
+<div>
+  <div>
+    <p
+      class="aboutText"
+    >
+      This is a web based app that helps user to know the exchange rate of some foreign currencies to Canadian dollar.
+    </p>
+    <button
+      class="backBtn"
+    >
+      Go Back
+    </button>
+  </div>
+</div>
+`;
