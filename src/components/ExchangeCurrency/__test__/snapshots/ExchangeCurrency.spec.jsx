@@ -18,5 +18,7 @@ describe("Convertor Page", () => {
     expect(screen.getByText("Amount of Canadian Dollars")).toBeInTheDocument();
     expect(screen.getByText("Canadian Dollar")).toBeInTheDocument();
     expect(screen.getByText("The exchange rate is")).toBeInTheDocument();
+    expect(screen.getByRole("textbox", { name: "" })).toBeInTheDocument();
+    expect(screen.getByRole("option", { contains: "USD" })).toBeInTheDocument();
   });
 });
